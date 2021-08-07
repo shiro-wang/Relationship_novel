@@ -17,7 +17,7 @@
             const Graph = ForceGraph3D()
 
             (document.getElementById('3d-graph'))
-                .jsonUrl('/final/3D_data.json')
+                .jsonUrl('hw3_relationship/final/3D_data.json')
                 .nodeThreeObject(node => {
                     const sprite = new SpriteText(node.id);
                     sprite.material.depthWrite = false; // make sprite background transparent
