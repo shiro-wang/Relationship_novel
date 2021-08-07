@@ -102,7 +102,7 @@ with open('C://Users//user//Desktop//Python//hw3//characters.txt', 'r' , encodin
         with open('C://Users//user//Desktop//Python//hw3//final//node_data.json', 'w' , encoding='utf-8') as f4:
             json.dump(all_data_nodes, f4)
         #3D_data
-        all_data_3D.update({"node":all_nodes_3D})
-        all_data_3D.update({"link":all_edge_3D})
+        all_data_3D.update({"nodes":all_nodes_3D})
+        all_data_3D.update({"links":all_edge_3D})
         with open('C://Users//user//Desktop//Python//hw3//final//3D_data.json', 'w' , encoding='utf-8') as f3D:
             json.dump(all_data_3D,f3D)
