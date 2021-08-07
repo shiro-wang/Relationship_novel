@@ -44,8 +44,7 @@ for i in edge_data:
     if(i.get('weight')>10):
         nx_graph.add_edge(i.get('n1'), i.get('n2'), value = math.log(i.get('weight')), color = '#8080C0')
 nt = Network('1080px', '1920px')
-
-#nt.barnes_hut()
+nt.barnes_hut()
 # populates the nodes and edges data structures
 nt.from_nx(nx_graph)
 nt.show('nx.html')
