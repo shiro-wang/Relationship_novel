@@ -97,7 +97,7 @@ with open('C://Users//user//Desktop//Python//hw3//characters.txt', 'r' , encodin
                 nodes={"n":i,"count":G.nodes[i]['count']}
                 all_data_nodes.append(nodes)
                 c = color_3D(G.nodes[i]['count'])
-                node_data_3D={"id": i,"color" :c,"value": G.nodes[i]['count']}
+                node_data_3D={"id": i,"color" :c,"value": int(math.log(G.nodes[i]['count'])*10)}
                 all_nodes_3D.append(node_data_3D)
         with open('C://Users//user//Desktop//Python//hw3//final//node_data.json', 'w' , encoding='utf-8') as f4:
             json.dump(all_data_nodes, f4)
