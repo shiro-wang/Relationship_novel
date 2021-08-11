@@ -20,9 +20,9 @@ def color_3D(i):
     elif(i < 1500):
         color = '#EA0000'
     elif(i < 2000):
-        color = '#930000'
+        color = '#FF359A'
     else:
-        color = '#4D0000'
+        color = '#930000'
     return color
 
 
